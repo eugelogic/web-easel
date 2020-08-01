@@ -1,0 +1,121 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 0;
+  line-height: 1.25;
+}
+
+.site-info__links a {
+  border: 1px double black;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+p a {
+  border-bottom: 1px solid black;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.site-info__links a:hover,
+.site-info__links a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.site-info__links--github:hover,
+.site-info__links--github:focus {
+  background-color: black;
+}
+
+.site-info__links--twitter:hover,
+.site-info__links--twitter:focus {
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+}
+
+p a:hover,
+p a:active {
+  text-decoration: none;
+  background-color: yellow;
+}
+
+code,
+kbd,
+samp {
+  background-color: lavender;
+  padding: 0 5px;
+}
+
+.site-info {
+  display: block;
+}
+
+.site-info__title {
+  text-align: center;
+  font-size: 31px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.site-info__description {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.site-info__links {
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container--sm {
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+/* Homepage index of entries */
+.entry-index {
+  margin: 30px 10px 0;
+}
+.entry {
+  margin-bottom: 60px;
+  border-bottom: 1px solid black;
+}
+.entry--last {
+  margin-bottom: 0;
+}
+.entry img {
+  outline: 1px solid black;
+}
+
+img {
+  width: 100%;
+}
+
+q {
+  font-style: italic;
+}
+
+.footer {
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

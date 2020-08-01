@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.train-letter {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0039a6;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  font-size: 180px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+  border: 2px solid white;
+}
+
+.train-route {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 37px;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
