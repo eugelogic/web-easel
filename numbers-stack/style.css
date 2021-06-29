@@ -1,0 +1,35 @@
+* {
+  position: relative;
+}
+
+body {
+  background-color: #acadb8;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 540px;
+  margin: 0;
+  line-height: 0.2875;
+  text-align: center;
+}
+
+.top {
+  z-index: 4;
+  color: black;
+}
+
+.second {
+  z-index: 3;
+  color: #3d3772;
+}
+
+.third {
+  z-index: 2;
+  color: #e53844;
+}
+
+.bottom {
+  z-index: 1;
+  color: #eb7840;
+}
