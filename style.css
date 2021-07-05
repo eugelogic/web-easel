@@ -115,7 +115,12 @@ q {
 
 .footer {
   min-height: 120px;
-  display: flex;
-  justify-content: center;
+  display: grid;
   align-items: center;
+}
+
+.footer-quote {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
