@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #c8102e;
+}
+
+h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #fce300;
+  font-size: 24vw;
+  font-weight: normal;
+}
