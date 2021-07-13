@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.band-one,
+.band-two,
+.band-three,
+.band-four,
+.band-five,
+.band-six,
+.band-seven,
+.band-eight,
+.band-nine,
+.band-ten {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "BioRhyme", serif;
+}
+
+/* Band 1 */
+.band-one {
+  height: 18vh;
+}
+.band-one h1 {
+  font-size: 16vh;
+}
+
+/* Band 2 */
+.band-two {
+  height: 15vh;
+}
+.band-two h1 {
+  font-size: 13vh;
+  letter-spacing: 12vh;
+  margin-right: -12vh;
+}
+
+/* Band 3 */
+.band-three {
+  height: 13vh;
+}
+.band-three h1 {
+  font-size: 10vh;
+  letter-spacing: 15vh;
+  margin-right: -15vh;
+}
+
+/* Band 4 */
+.band-four {
+  height: 11vh;
+}
+.band-four h1 {
+  font-size: 6vh;
+  letter-spacing: 11vh;
+  margin-right: -11vh;
+}
+
+/* Band 5 */
+.band-five {
+  height: 9vh;
+}
+.band-five h1 {
+  font-size: 5vh;
+  letter-spacing: 8.5vh;
+  margin-right: -8.5vh;
+}
+
+/* Band 6 */
+.band-six {
+  height: 8vh;
+}
+.band-six h1 {
+  font-size: 4vh;
+  letter-spacing: 7vh;
+  margin-right: -7vh;
+}
+
+/* Band 7 */
+.band-seven {
+  height: 7vh;
+}
+.band-seven h1 {
+  font-size: 3vh;
+  letter-spacing: 6vh;
+  margin-right: -6vh;
+}
+
+/* Band 8 */
+.band-eight {
+  height: 6vh;
+}
+.band-eight h1 {
+  font-size: 2vh;
+  letter-spacing: 5.5vh;
+  margin-right: -5.5vh;
+}
+
+/* Band 9 */
+.band-nine {
+  height: 6vh;
+}
+.band-nine h1 {
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 4.75vh;
+  margin-right: -4.75vh;
+}
+
+/* Band 10 */
+.band-ten {
+  height: 5vh;
+}
+.band-ten h1 {
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.25);
+  letter-spacing: 4vh;
+  margin-right: -4vh;
+}
