@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+body {
+  margin: 0;
+  background: #00778b; /* blue pastel */
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.grid {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.front,
+.back {
+  height: 230px;
+  width: 230px;
+}
+
+.back,
+.front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front::before {
+  content: "?";
+}
+
+.front {
+  background-color: #ac3434; /* dark red */
+  font-size: 130px;
+  color: white;
+  text-align: center;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background-color: #e5b024 !important; /* dark yellow */
+}
+
+.match .front::before {
+  content: none;
+}
+
+.game-over {
+  color: white;
+  background-color: #ac3434; /* dark red */
+  text-align: center;
+  padding: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.game-over .close-btn {
+  float: right;
+  font-size: 36px;
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+.game-over h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.game-over p {
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+.game-over button {
+  display: block;
+  margin: 5px auto 15px;
+}
+
+.game-over .emoji {
+  font-size: 100px;
+}
+
+.btn {
+  color: #fff;
+  background: #00778b; /* blue pastel */
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .grid {
+    max-width: 1140px;
+  }
+
+  .game-over {
+    max-width: 1130px;
+  }
+
+  .card,
+  .front,
+  .back {
+    height: 180px;
+    width: 180px;
+  }
+}
