@@ -1,0 +1,139 @@
+* {
+  background: #262626;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.container {
+  display: grid;
+  width: 100vh;
+  height: 100vh;
+  grid-template-columns: repeat(29, 1fr);
+  grid-template-rows: repeat(29, 1fr);
+  margin: 0 auto;
+}
+
+.hour-one p,
+.hour-three p,
+.hour-five p,
+.hour-seven p,
+.hour-eleven p {
+  color: white;
+  font-size: 3vw;
+}
+
+.hour-one p,
+.hour-five p,
+.hour-seven p,
+.hour-eleven p {
+  display: grid;
+  place-items: center;
+}
+
+.hour-three p {
+  line-height: 1;
+}
+
+.hour-one {
+  grid-column: 19 / span 2;
+  grid-row: 7 / span 2;
+}
+
+.hour-three {
+  grid-column: 23 / span 2;
+  grid-row: 14 / span 2;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+
+.hour-five {
+  grid-column: 19 / span 2;
+  grid-row: 22 / span 2;
+}
+
+.hour-seven {
+  grid-column: 10 / span 2;
+  grid-row: 22 / span 2;
+}
+
+.hour-eleven {
+  grid-column: 10 / span 2;
+  grid-row: 7 / span 2;
+}
+
+.clock {
+  grid-column: 8 / span 15;
+  grid-row: 8 / span 15;
+  border: 4px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.clock-face {
+  background: transparent;
+  grid-column: 15 / span 1;
+  grid-row: 15 / span 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-4px); /* account for the height of the clock hands */
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand--hours {
+  background: white;
+  width: 30%;
+  left: 20%;
+  height: 4px;
+}
+
+.hand--minutes {
+  background: white;
+  width: 40%;
+  left: 10%;
+  height: 4px;
+}
+
+.hand--seconds {
+  width: 45%;
+  height: 3px;
+  background: yellow;
+  left: 5%;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .clock {
+    border-width: 2px;
+  }
+
+  .hand--hours,
+  .hand--minutes {
+    height: 2px;
+  }
+
+  .hand--seconds {
+    height: 1px;
+  }
+
+  .hour-one p,
+  .hour-three p,
+  .hour-five p,
+  .hour-seven p,
+  .hour-eleven p {
+    font-size: 5vw;
+  }
+}
