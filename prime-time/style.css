@@ -14,6 +14,7 @@
 }
 
 .hour-one p,
+.hour-two p,
 .hour-three p,
 .hour-five p,
 .hour-seven p,
@@ -22,14 +23,15 @@
   font-size: 3vw;
 }
 
-.hour-one p,
-.hour-five p,
-.hour-seven p,
-.hour-eleven p {
+.hour-one,
+.hour-five,
+.hour-seven,
+.hour-eleven {
   display: grid;
   place-items: center;
 }
 
+.hour-two p,
 .hour-three p {
   line-height: 1;
 }
@@ -37,6 +39,14 @@
 .hour-one {
   grid-column: 19 / span 2;
   grid-row: 7 / span 2;
+}
+
+.hour-two {
+  grid-column: 22 / span 2;
+  grid-row: 10 / span 2;
+  display: grid;
+  justify-content: center;
+  align-items: end;
 }
 
 .hour-three {
