@@ -3,6 +3,10 @@
   color: black;
 }
 
+.header {
+  margin: 0 10px;
+}
+
 h2 {
   text-transform: uppercase;
 }
