@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+.container {
+  background-color: #2f57e1;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 300;
+  font-size: 15vw;
+  color: white;
+}
