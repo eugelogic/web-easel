@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+}
+.row--a {
+  margin-left: -4vw;
+}
+.row--b {
+  margin-left: -2vw;
+}
+.row--c {
+  margin-left: -4vw;
+}
+
+.box {
+  min-width: 6vw;
+  min-height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box--white,
+.box--black {
+  border: 2px solid orangered;
+}
+
+h1 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 4vw;
+}
+
+.box--black {
+  background-color: black;
+}
+.box--black h1 {
+  color: white;
+}
+
+@media screen and (min-width: 421px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    transform: rotate(90deg);
+  }
+  .box {
+    min-width: 10vw;
+    min-height: 10vw;
+  }
+  .box--black,
+  .box--white {
+    border-width: 1px;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .hide-on-desktop {
+    transform: rotate(-90deg);
+    font-size: 6vw;
+  }
+}
