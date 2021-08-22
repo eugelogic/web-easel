@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.banner-one,
+.banner-two,
+.banner-three,
+.banner-four {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.banner-middle {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.band-blue,
+.band-red,
+.band-black,
+.band-yellow,
+.band-green {
+  flex: 1;
+}
+
+.band-blue {
+  background-color: #0272ca;
+}
+.band-red {
+  background-color: #cc0539;
+}
+.band-black {
+  background-color: black;
+}
+.band-yellow {
+  background-color: #fae402;
+}
+.band-green {
+  background-color: #15b724;
+}
+
+.bicycle-top {
+  width: 220px;
+  border-bottom: 2px solid #262626;
+}
+.bicycle {
+  display: flex;
+}
+
+h1 {
+  font-family: "Baumans", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+h1:first-child,
+h1:last-child {
+  border: 2px solid #262626;
+  border-radius: 50%;
+  line-height: 2.5;
+  padding: 44px;
+}
+h1:nth-child(2) {
+  line-height: 2.5;
+  padding: 46px 0;
+}
+
+.cycling {
+  animation-name: cycle;
+  animation-duration: 12000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cycle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bicycle-top {
+    border-bottom: none;
+  }
+  .bicycle {
+    padding-top: 0;
+    flex-direction: column;
+  }
+  h1:first-child,
+  h1:last-child {
+    padding: 20px;
+  }
+  h1:nth-child(2) {
+    line-height: 1.5;
+    text-align: center;
+    padding: 0;
+  }
+}
