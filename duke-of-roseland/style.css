@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  background-color: cornsilk;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  border: 15px double black;
+  box-shadow: 3px 3px black;
+  margin: 60px;
+  padding: 60px;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 10vh;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 520px) {
+  .frame {
+    margin: 0;
+    padding: 40px 10px;
+  }
+  h1 {
+    font-size: 10vw;
+  }
+}
