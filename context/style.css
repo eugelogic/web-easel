@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+}
+
+.container {
+  background-color: #08c2ef;
+  min-height: 100vh;
+}
+
+.blurb {
+  padding-top: 10vh;
+}
+.blurb p {
+  font-family: "PT Sans", sans-serif;
+  color: #262626;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.halves {
+  display: flex;
+}
+
+.half-first,
+.half-second {
+  flex: 1 1 50%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #262626;
+  display: grid;
+}
+
+.circle--center {
+  width: 5vw;
+  height: 5vw;
+}
+.circle--smaller {
+  width: 3vw;
+  height: 3vw;
+}
+.circle--larger {
+  width: 7vw;
+  height: 7vw;
+}
+
+.circle-one,
+.circle-two,
+.circle-three,
+.circle-four,
+.circle-five,
+.circle-six,
+.circle-seven {
+  display: grid;
+  place-items: center;
+}
+
+.circle-one {
+  grid-column: 4 / span 2;
+  grid-row: 6 / span 2;
+}
+.circle-two {
+  grid-column: 5 / span 2;
+  grid-row: 4 / span 2;
+}
+.circle-three {
+  grid-column: 7 / span 2;
+  grid-row: 4 / span 2;
+}
+.circle-four {
+  grid-column: 6 / span 2;
+  grid-row: 6 / span 2;
+}
+.circle-five {
+  grid-column: 8 / span 2;
+  grid-row: 6 / span 2;
+}
+.circle-six {
+  grid-column: 7 / span 2;
+  grid-row: 8 / span 2;
+}
+.circle-seven {
+  grid-column: 5 / span 2;
+  grid-row: 8 / span 2;
+}
+
+@media screen and (max-width: 420px) {
+  .blurb {
+    padding-right: 5vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+  }
+}
