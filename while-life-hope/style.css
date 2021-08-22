@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+pre {
+  font-family: "Courier Prime", monospace;
+  font-size: 8vh;
+}
+
+.red {
+  color: #fb1d70;
+}
+.green {
+  color: #a4e305;
+}
+.white {
+  color: white;
+}
+
+@media screen and (max-width: 420px) {
+  pre {
+    font-size: 5vh;
+  }
+}
