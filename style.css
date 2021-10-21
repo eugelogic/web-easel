@@ -69,17 +69,10 @@ samp {
   display: block;
 }
 
-.site-info__title {
-  text-align: center;
-  font-size: 31px;
-  margin: 20px 0;
-  font-weight: bold;
-}
-
 .site-info__description {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 31px;
+  margin: 50px 0;
 }
 
 .site-info__links {
