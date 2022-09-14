@@ -1,390 +1,724 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eugene Molari's collection of landing pages</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Easel | Eugene Molari's collection of landing pages</title>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
+  <body>
     <div class="container--sm">
+      <header class="header">
+        <h1 class="site-info site-info__description">
+          EUGENE MOLARI's<br />collection of landing pages.
+        </h1>
 
-        <header class="header">
+        <p>
+          These are some of my side projects where I take design licences and
+          experiment with both front and back end code.
+        </p>
+        <p>
+          I get inspired by printed press, architecture, music, fashion, art and
+          the web of course.
+        </p>
+        <p>
+          I like to challenge myself to turn rough ideas and graphic design into
+          responsive web pages with a meaning.
+        </p>
+        <p>Feel free to get in touch and let me know what you think.</p>
 
-            <h1 class="site-info site-info__description">EUGENE MOLARI's<br>collection of landing
-                pages.</h1>
+        <div class="site-info site-info__links">
+          <a
+            class="site-info__links--github"
+            href="https://github.com/eugelogic"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            class="site-info__links--twitter"
+            href="https://twitter.com/EugeneMolari"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+        </div>
+      </header>
 
-            <p>These are some of my side projects where I take design licences and experiment with both front and back
-                end code.</p>
-            <p>I get inspired by printed press, architecture, music, fashion, art and the web of course.</p>
-            <p>I like to challenge myself to turn rough ideas and graphic design into responsive web pages with a
-                meaning.</p>
-            <p>Feel free to get in touch and let me know what you think.</p>
+      <div class="entry-index">
+        <div class="entry">
+          <a href="/eugenes-elements/">
+            <img
+              src="eugenes-elements/eugenes-elements.jpg"
+              alt="Eugene's Elements landing page"
+            />
+          </a>
+          <a href="/eugenes-elements/">
+            <h2>Eugene's Elements</h2>
+          </a>
+          <p>
+            I always liked the way the period table looks, it's so well
+            organised. One day I wondered if I could make up my name with some
+            of the elements. The number at the top of each card is the atomic
+            number, whereas the one at the bottom is the atomic weight. Click on
+            each card to learn more. I used flexbox to arrange the cards and the
+            elements within. To make it mobile friendly I mainly edited the
+            direction of flex. I often like to use css named colours since they
+            are easier to remember. This page features <i>medium sea green</i>,
+            <i>cornflower blue</i> and <i>yellow</i>. Font
+            <a href="https://fonts.google.com/specimen/Raleway">Raleway</a>.
+          </p>
+        </div>
 
-            <div class="site-info site-info__links">
-                <a class="site-info__links--github" href="https://github.com/eugelogic" target="_blank"
-                    rel="noopener noreferrer">GitHub</a>
-                <a class="site-info__links--twitter" href="https://twitter.com/EugeneMolari" target="_blank"
-                    rel="noopener noreferrer">Twitter</a>
-            </div>
+        <div class="entry">
+          <a href="/context/">
+            <img src="context/context.jpg" alt="Context landing page" />
+          </a>
+          <a href="/context/">
+            <h2>Context</h2>
+          </a>
+          <p>
+            Context plays such a major part in the creative process. The
+            "adjust" part of the
+            <a
+              href="https://en.wikipedia.org/wiki/SCAMPER"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Scamper</a
+            >
+            creative thinking technique illustrates this concept. The circles in
+            the middle are identical but because they are placed in different
+            context they make us think otherwise. They say "there is no such
+            thing as a bad idea but an idea applied to the wrong problem". The
+            circles live over a css grid and <i>adjust</i> to the width of the
+            page. Font
+            <a
+              href="https://fonts.google.com/specimen/PT+Sans"
+              target="_blank"
+              rel="noopener noreferrer"
+              >PT Sans</a
+            >
+          </p>
+        </div>
 
-        </header>
+        <div class="entry">
+          <a href="/cafe-wall/">
+            <img src="cafe-wall/cafe-wall.jpg" alt="Café Wall landing page" />
+          </a>
+          <a href="/cafe-wall/">
+            <h2>Café Wall</h2>
+          </a>
+          <p>
+            I once bumped into a building in the back streets of
+            <a
+              href="https://en.wikipedia.org/wiki/Camden_Town"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Camden Town</a
+            >
+            which featured tiles on the ground floor arranged in this manner. I
+            later found out reading
+            <a
+              href="https://www.amazon.co.uk/Thinkertoys-Creative-Thinking-Techniques-Michael-Michalko/dp/1580087736"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Thinkertoys</a
+            >
+            that it is actually a visual illusion called "Café Wall". The
+            <a
+              href="https://en.wikipedia.org/wiki/Caf%C3%A9_wall_illusion"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Wikipedia page</a
+            >
+            shows also a building with such pattern and that's where I got the
+            orange from. I used css flexbox on each row individually and shifted
+            them with some negative margin. To make it work on mobile I just
+            rotated the whole thing by 90' degees and hid/shown the caption
+            accordingly. Font
+            <a
+              href="https://fonts.google.com/specimen/Architects+Daughter"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Architects Daughter</a
+            >.
+          </p>
+        </div>
 
-        <div class="entry-index">
+        <div class="entry">
+          <a href="/while-life-hope/">
+            <img
+              src="while-life-hope/while-life-hope.png"
+              alt="While Life Hope landing page"
+            />
+          </a>
+          <a href="/while-life-hope/">
+            <h2>While Life Hope</h2>
+          </a>
+          <p>
+            Sometimes we need to be reminded that as long as there is life there
+            is hope. I wanted to combine this quote with a basic conditional
+            statement that can be applied to many programming languages. I've
+            seen similar concepts on t-shirts and other merchandise but I wanted
+            to make my own one. The colour palette comes from the Monokai theme
+            on Visual Studio Code editor, font
+            <a
+              href="https://fonts.google.com/specimen/Courier+Prime"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Courier Prime</a
+            >
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/eugenes-elements/">
-                    <img src="eugenes-elements/eugenes-elements.jpg" alt="Eugene's Elements landing page">
-                </a>
-                <a href="/eugenes-elements/">
-                    <h2>Eugene's Elements</h2>
-                </a>
-                <p>I always liked the way the period table looks, it's so well organised. One day I wondered if I could
-                    make up my name with some of the elements. The number at the top of each card is the atomic number,
-                    whereas the one at the bottom is the atomic weight. Click on each card to learn more. I used flexbox
-                    to arrange the cards and the elements within. To make it mobile friendly I mainly edited the
-                    direction of flex. I often like to use css named colours since they are easier to remember. This
-                    page features <i>medium sea green</i>, <i>cornflower blue</i> and <i>yellow</i>. Font <a
-                        href="https://fonts.google.com/specimen/Raleway">Raleway</a>.</p>
-            </div>
+        <div class="entry">
+          <a href="/duke-of-roseland/">
+            <img
+              src="duke-of-roseland/duke-of-roseland.jpg"
+              alt="Duke of Roseland landing page"
+            />
+          </a>
+          <a href="/duke-of-roseland/">
+            <h2>Duke of Roseland</h2>
+          </a>
+          <p>
+            As soon as I saw the
+            <a
+              href="https://fonts.google.com/specimen/Cinzel"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Cinzel font</a
+            >
+            I thought it looked very regal. Since I don't expect any time soon
+            to be crowned king, I settled for the title of duke (self-assigned
+            of course).
+            <a
+              href="https://www.nationaltrust.org.uk/roseland"
+              target="_blank"
+              rel="noopener noreferrer"
+              >The Roseland</a
+            >
+            is one of my favourite places ever in Cornwall. I also used a double
+            border and a box shadow. Colour cornsilk, coincidently enough.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/context/">
-                    <img src="context/context.jpg" alt="Context landing page">
-                </a>
-                <a href="/context/">
-                    <h2>Context</h2>
-                </a>
-                <p>Context plays such a major part in the creative process. The "adjust" part of the <a
-                        href="https://en.wikipedia.org/wiki/SCAMPER" target="_blank"
-                        rel="noopener noreferrer">Scamper</a> creative thinking technique illustrates this concept. The
-                    circles in the middle are identical but because they are placed in different context they make us
-                    think otherwise. They say "there is no such thing as a bad idea but an idea applied to the wrong
-                    problem". The circles live over a css grid and <i>adjust</i> to the width of the page. Font <a
-                        href="https://fonts.google.com/specimen/PT+Sans" target="_blank" rel="noopener noreferrer">PT
-                        Sans</a></p>
-            </div>
+        <div class="entry">
+          <a href="/whats-your-type/">
+            <img
+              src="whats-your-type/whats-your-type.jpg"
+              alt="What's Your Type landing page"
+            />
+          </a>
+          <a href="/whats-your-type/">
+            <h2>What's Your Type?</h2>
+          </a>
+          <p>
+            This is one of my favourites. I thought it would be easier to put
+            together 15 different font families; far from it. I got the idea
+            from the
+            <a
+              href="https://www.amazon.co.uk/Just-My-Type-About-Fonts/dp/1846683025/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >"Just My Type" book</a
+            >. Click each letter to learn what font I used.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/cafe-wall/">
-                    <img src="cafe-wall/cafe-wall.jpg" alt="Café Wall landing page">
-                </a>
-                <a href="/cafe-wall/">
-                    <h2>Café Wall</h2>
-                </a>
-                <p>I once bumped into a building in the back streets of <a
-                        href="https://en.wikipedia.org/wiki/Camden_Town" target="_blank"
-                        rel="noopener noreferrer">Camden Town</a> which featured tiles on the ground
-                    floor arranged in this manner. I later found out reading <a
-                        href="https://www.amazon.co.uk/Thinkertoys-Creative-Thinking-Techniques-Michael-Michalko/dp/1580087736"
-                        target="_blank" rel="noopener noreferrer">Thinkertoys</a> that it is actually a visual
-                    illusion called "Café Wall". The <a href="https://en.wikipedia.org/wiki/Caf%C3%A9_wall_illusion"
-                        target="_blank" rel="noopener noreferrer">Wikipedia page</a> shows also a building with such
-                    pattern and that's where I got the orange from. I used css flexbox on each row individually and
-                    shifted them with some negative margin. To make it work on mobile I just rotated the whole thing by
-                    90' degees and hid/shown the caption accordingly.
-                    Font <a href="https://fonts.google.com/specimen/Architects+Daughter" target="_blank"
-                        rel="noopener noreferrer">Architects Daughter</a>.</p>
-            </div>
+        <div class="entry">
+          <a href="/over-entertainment/">
+            <img
+              src="over-entertainment/over-entertainment.jpg"
+              alt="Over Entertainment landing page"
+            />
+          </a>
+          <a href="/over-entertainment/">
+            <h2>Over Entertainment</h2>
+          </a>
+          <p>
+            Do you ever feel like you've been over entertained? Social media,
+            billboards, tv, the internet, music at any venue, radio in the car,
+            etc. Or indeed you over entertain yourself by watching silly YouTube
+            videos? I used css grid to put the iframes in place and had to find
+            videos about 10 seconds long in order not to be too demanding of the
+            data fetch. Enabling autoplay was key to delivering the message.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/while-life-hope/">
-                    <img src="while-life-hope/while-life-hope.png" alt="While Life Hope landing page">
-                </a>
-                <a href="/while-life-hope/">
-                    <h2>While Life Hope</h2>
-                </a>
-                <p>Sometimes we need to be reminded that as long as there is life there is hope. I wanted to combine
-                    this quote with a basic conditional statement that can be applied to many programming languages.
-                    I've seen similar concepts on t-shirts and other merchandise but I wanted to make my own one. The
-                    colour palette comes from the Monokai theme on Visual Studio Code editor, font <a
-                        href="https://fonts.google.com/specimen/Courier+Prime" target="_blank"
-                        rel="noopener noreferrer">Courier Prime</a></p>
-            </div>
+        <div class="entry">
+          <a href="/life-is-a-cycle/">
+            <img
+              src="life-is-a-cycle/life-is-a-cycle.jpg"
+              alt="Life Is A Cycle landing page"
+            />
+          </a>
+          <a href="/life-is-a-cycle/">
+            <h2>Life Is A Cycle</h2>
+          </a>
+          <p>
+            Whilst hearing about cycling events on the news lately, I noticed
+            this traditional colour palette. I've been meaning to make something
+            with it for a while since it reminds me of my childhood for some
+            reasons. I then had to think about something that cycles and if it's
+            true that we pretty much do the same things every day and every
+            other length of time, life is a cycle! It was also convenient to
+            apply a simple rotating animation, mimicking the spinning wheels of
+            a bicycle. The bands of colours live in flexbox rows as I prefer
+            that to design assets. Font
+            <a
+              href="https://fonts.google.com/specimen/Baumans"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Baumans</a
+            >
+            was round enough to fit the theme.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/duke-of-roseland/">
-                    <img src="duke-of-roseland/duke-of-roseland.jpg" alt="Duke of Roseland landing page">
-                </a>
-                <a href="/duke-of-roseland/">
-                    <h2>Duke of Roseland</h2>
-                </a>
-                <p>As soon as I saw the <a href="https://fonts.google.com/specimen/Cinzel" target="_blank"
-                        rel="noopener noreferrer">Cinzel font</a> I thought it looked very
-                    regal. Since I don't expect any time soon to be crowned king, I settled for the title of duke
-                    (self-assigned of course). <a href="https://www.nationaltrust.org.uk/roseland" target="_blank"
-                        rel="noopener noreferrer">The Roseland</a> is one of my favourite places ever in Cornwall. I
-                    also used a double border and a box shadow. Colour cornsilk, coincidently enough.</p>
-            </div>
+        <div class="entry">
+          <a href="/judgin/">
+            <img src="judgin/judgin.jpg" alt="Judgin landing page" />
+          </a>
+          <a href="/judgin/">
+            <h2>Judgin</h2>
+          </a>
+          <p>
+            I was intrigued by the way the
+            <a
+              href="https://en.wikipedia.org/wiki/Phonetic_transcription"
+              target="_blank"
+              rel="noopener noreferrer"
+              >phonetic transcription</a
+            >
+            of my name looked. I liked how it features two long suprasegmentals
+            (the little triangles) and how the postalveolar resembles a number
+            3. After I drafted it, I came across a
+            <a
+              href="https://en.wikipedia.org/wiki/Blueprint"
+              target="_blank"
+              rel="noopener noreferrer"
+              >blueprint</a
+            >
+            and thought the colour palette and thin font weight would go well
+            together. Font
+            <a
+              href="https://fonts.google.com/specimen/Gothic+A1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Gothic A1</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/whats-your-type/">
-                    <img src="whats-your-type/whats-your-type.jpg" alt="What's Your Type landing page">
-                </a>
-                <a href="/whats-your-type/">
-                    <h2>What's Your Type?</h2>
-                </a>
-                <p>This is one of my favourites. I thought it would be easier to put together 15 different font
-                    families; far from it. I got the idea from the <a
-                        href="https://www.amazon.co.uk/Just-My-Type-About-Fonts/dp/1846683025/" target="_blank"
-                        rel="noopener noreferrer">"Just My Type" book</a>. Click each letter to learn what font I used.
-                </p>
-            </div>
+        <div class="entry">
+          <a href="/donuts-memory-game/">
+            <img
+              src="donuts-memory-game/donuts-memory-game.jpg"
+              alt="Donut memory game"
+            />
+          </a>
+          <a href="/donuts-memory-game/">
+            <h2>Donuts Memory Game</h2>
+          </a>
+          <p>
+            Memory card game inspired by
+            <a
+              href="https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Tania Rascia's version.</a
+            >
+            Themed with
+            <a
+              href="https://unsplash.com/s/photos/donuts"
+              target="_blank"
+              rel="noopener noreferrer"
+              >donuts from Unsplash</a
+            >
+            with credits in each file name. Font
+            <a
+              href="https://fonts.google.com/specimen/Baloo+Bhai+2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Baloo Bhai 2</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/over-entertainment/">
-                    <img src="over-entertainment/over-entertainment.jpg" alt="Over Entertainment landing page">
-                </a>
-                <a href="/over-entertainment/">
-                    <h2>Over Entertainment</h2>
-                </a>
-                <p>Do you ever feel like you've been over entertained? Social media, billboards, tv, the internet,
-                    music at any venue, radio in the car, etc. Or indeed you over entertain yourself by watching silly
-                    YouTube videos? I used css grid to put the iframes in place and had to find videos about 10 seconds
-                    long in order not to be too demanding of the data fetch. Enabling autoplay was key to delivering the
-                    message.</p>
-            </div>
+        <div class="entry">
+          <a href="/prime-time/">
+            <img
+              src="prime-time/prime-time.jpg"
+              alt="Prime Time landing page"
+            />
+          </a>
+          <a href="/prime-time/">
+            <h2>Prime Time</h2>
+          </a>
+          <p>
+            Here's an analog clock showing only
+            <a
+              href="https://en.wikipedia.org/wiki/Prime_number"
+              target="_blank"
+              rel="noopener noreferrer"
+              >prime numbers</a
+            >. The actual mechanism comes from the
+            <a
+              href="https://javascript30.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Wes Bos Javascript 30 clock exercise</a
+            >. The numbers live within an underlying css grid. Font
+            <a
+              href="https://fonts.google.com/specimen/Titillium+Web"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Titillium Web</a
+            >
+            partly chosen because it's designed by some compatriots at the
+            <a
+              href="https://www.accademiadiurbino.it/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Accademia di Belle Arti di Urbino</a
+            >, who happen to have an awesome website.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/life-is-a-cycle/">
-                    <img src="life-is-a-cycle/life-is-a-cycle.jpg" alt="Life Is A Cycle landing page">
-                </a>
-                <a href="/life-is-a-cycle/">
-                    <h2>Life Is A Cycle</h2>
-                </a>
-                <p>Whilst hearing about cycling events on the news lately, I noticed this traditional colour palette.
-                    I've
-                    been meaning to make something with it for a while since it reminds me of my childhood for some
-                    reasons. I then had to think about something that cycles and if it's true that we pretty much do the
-                    same things every day and every other length of time, life is a cycle! It was also convenient to
-                    apply a simple rotating animation, mimicking the spinning wheels of a bicycle. The bands of colours
-                    live in flexbox rows as I prefer that to design assets. Font <a
-                        href="https://fonts.google.com/specimen/Baumans" target="_blank"
-                        rel="noopener noreferrer">Baumans</a> was round enough to fit the theme.</p>
-            </div>
+        <div class="entry">
+          <a href="/travel-the-world/">
+            <img
+              src="travel-the-world/travel-the-world.jpg"
+              alt="Travel the World landing page"
+            />
+          </a>
+          <a href="/travel-the-world/">
+            <h2>Travel the World</h2>
+          </a>
+          <p>
+            Inspired by the logo of the website for
+            <a
+              href="https://www.visitlisboa.com/en"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Visit Lisboa</a
+            >, the capital of
+            <a
+              href="https://en.wikipedia.org/wiki/Portugal"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Portugal</a
+            >. Font
+            <a
+              href="https://fonts.google.com/specimen/Open+Sans"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open Sans</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/judgin/">
-                    <img src="judgin/judgin.jpg" alt="Judgin landing page">
-                </a>
-                <a href="/judgin/">
-                    <h2>Judgin</h2>
-                </a>
-                <p>I was intrigued by the way the <a href="https://en.wikipedia.org/wiki/Phonetic_transcription"
-                        target="_blank" rel="noopener noreferrer">phonetic transcription</a> of my name looked. I liked
-                    how it features two long suprasegmentals (the little triangles) and how the postalveolar resembles a
-                    number 3. After I drafted it, I came across a <a href="https://en.wikipedia.org/wiki/Blueprint"
-                        target="_blank" rel="noopener noreferrer">blueprint</a> and
-                    thought the colour palette and thin font weight would go well together. Font <a
-                        href="https://fonts.google.com/specimen/Gothic+A1" target="_blank"
-                        rel="noopener noreferrer">Gothic A1</a>.
-                </p>
-            </div>
+        <div class="entry">
+          <a href="/web-eye-test/">
+            <img
+              src="web-eye-test/web-eye-test.jpg"
+              alt="Web Themed Eye Test landing page"
+            />
+          </a>
+          <a href="/web-eye-test/">
+            <h2>Web Eye Test</h2>
+          </a>
+          <p>
+            I'm sure someone else has come up with this idea before but I wanted
+            to make my own version. It was a little time consuming to get the
+            proportions right. I also had to find a way to center align the
+            letters on each row as the extra letter spacing would add space to
+            last letter as well.
+            <a
+              href="https://fonts.google.com/specimen/BioRhyme"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Font BioRhyme</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/donuts-memory-game/">
-                    <img src="donuts-memory-game/donuts-memory-game.jpg" alt="Donut memory game">
-                </a>
-                <a href="/donuts-memory-game/">
-                    <h2>Donuts Memory Game</h2>
-                </a>
-                <p>Memory card game inspired by <a
-                        href="https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/"
-                        target="_blank" rel="noopener noreferrer">Tania Rascia's version.</a> Themed with <a
-                        href="https://unsplash.com/s/photos/donuts" target="_blank" rel="noopener noreferrer">donuts
-                        from Unsplash</a> with credits in each file name.
-                    Font <a href="https://fonts.google.com/specimen/Baloo+Bhai+2" target="_blank"
-                        rel="noopener noreferrer">Baloo Bhai 2</a>.
-                </p>
-            </div>
+        <div class="entry">
+          <a href="/chinese-eugene/">
+            <img
+              src="chinese-eugene/chinese-eugene.jpg"
+              alt="Eugene in Chinese"
+            />
+          </a>
+          <a href="/chinese-eugene/">
+            <h2>Chinese Eugene</h2>
+          </a>
+          <p>
+            Have you ever wondered how your name looks like in Chinese
+            characters? and in the
+            <a
+              href="https://flagcolor.com/chinese-flag-color-codes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >colours of the Chinese flag</a
+            >? Here's mine, I just used
+            <a
+              href="https://translate.google.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google translate</a
+            >. There were not many Google fonts for Chinese though but I did
+            find
+            <a
+              href="https://fonts.google.com/specimen/Noto+Sans+TC"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Noto Sans TC</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/prime-time/">
-                    <img src="prime-time/prime-time.jpg" alt="Prime Time landing page">
-                </a>
-                <a href="/prime-time/">
-                    <h2>Prime Time</h2>
-                </a>
-                <p>Here's an analog clock showing only <a href="https://en.wikipedia.org/wiki/Prime_number"
-                        target="_blank" rel="noopener noreferrer">prime numbers</a>. The actual mechanism comes from the
-                    <a href="https://javascript30.com/" target="_blank" rel="noopener noreferrer">Wes Bos Javascript 30
-                        clock exercise</a>. The numbers live within an underlying css grid. Font <a
-                        href="https://fonts.google.com/specimen/Titillium+Web" target="_blank"
-                        rel="noopener noreferrer">Titillium Web</a> partly chosen because it's designed by some
-                    compatriots at the <a href="https://www.accademiadiurbino.it/en/" target="_blank"
-                        rel="noopener noreferrer">Accademia di Belle Arti di Urbino</a>, who happen to have an awesome
-                    website.
-                </p>
-            </div>
+        <div class="entry">
+          <a href="/numbers-stack/">
+            <img
+              src="numbers-stack/numbers-stack.jpg"
+              alt="Numbers Stack landing page"
+            />
+          </a>
+          <a href="/numbers-stack/">
+            <h2>Numbers Stack</h2>
+          </a>
+          <p>
+            I was considering to learn to do card tricks, just for the sake of
+            doing something cool with my hands away from the screen. Whilst
+            browsing a website I bumped into the
+            <a
+              href="https://www.artofplay.com/products/45s"
+              target="_blank"
+              rel="noopener noreferrer"
+              >45s Playing Cards</a
+            >. Then just by adding 1 and 2 at either end, I made up the year of
+            birth of
+            <a
+              href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Leonardo da Vinci</a
+            >.
+            <a
+              href="https://fonts.google.com/specimen/Lexend+Deca"
+              target="_blak"
+              rel="noopenere noreferrer"
+              >Lexend Deca font family</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/travel-the-world/">
-                    <img src="travel-the-world/travel-the-world.jpg" alt="Travel the World landing page">
-                </a>
-                <a href="/travel-the-world/">
-                    <h2>Travel the World</h2>
-                </a>
-                <p>Inspired by the logo of the website for <a href="https://www.visitlisboa.com/en" target="_blank"
-                        rel="noopener noreferrer">Visit Lisboa</a>, the capital of <a
-                        href="https://en.wikipedia.org/wiki/Portugal" target="_blank"
-                        rel="noopener noreferrer">Portugal</a>. Font <a
-                        href="https://fonts.google.com/specimen/Open+Sans" target="_blank"
-                        rel="noopener noreferrer">Open Sans</a>.</p>
-            </div>
+        <div class="entry">
+          <a href="e-train/">
+            <img src="e-train/e-train.jpg" alt="MTA E Train landing page" />
+          </a>
+          <a href="e-train/">
+            <h2>E Train</h2>
+          </a>
+          <p>
+            Inspired by an
+            <a
+              href="https://eugebucket.s3-eu-west-1.amazonaws.com/media/ny-transit-museum-store-e-train-t-shirt.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MTA E Train t-shirt</a
+            >
+            I bought when I visited New York City in 2004.
+            <a
+              href="https://www.aiga.org/the-mostly-true-story-of-helvetica-and-the-new-york-city-subway"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Helvetica seems to be the font family used by the MTA</a
+            >
+            but I didn't have a licence for it so I opted for
+            <a
+              href="https://fonts.google.com/specimen/Montserrat"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Montserrat</a
+            >
+            on the train letter and
+            <a
+              href="https://fonts.google.com/specimen/Libre+Franklin"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Libre Franklin</a
+            >
+            on the train route which I reckon they are close enough. Lastly I
+            got the actual blue colour from the
+            <a
+              href="http://web.mta.info/developers/resources/line_colors.htm"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MTA brand guide</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/web-eye-test/">
-                    <img src="web-eye-test/web-eye-test.jpg" alt="Web Themed Eye Test landing page">
-                </a>
-                <a href="/web-eye-test/">
-                    <h2>Web Eye Test</h2>
-                </a>
-                <p>I'm sure someone else has come up with this idea before but I wanted to make my own version. It was a
-                    little time consuming to get the proportions right. I also had to find a way to center align the
-                    letters on each row as the extra letter spacing would add space to last letter as well. <a
-                        href="https://fonts.google.com/specimen/BioRhyme" target="_blank" rel="noopener noreferrer">Font
-                        BioRhyme</a>.</p>
-            </div>
+        <div class="entry">
+          <a href="life-coach/">
+            <img
+              src="life-coach/life-coach.jpg"
+              alt="Life Coach landing page"
+            />
+          </a>
+          <a href="life-coach/">
+            <h2>Andrew Taylor - Life Coach</h2>
+          </a>
+          <p>
+            A friend of mine asked me to put together a landing page for his new
+            life coaching business, this is its dummy version. I got the
+            <a
+              href="https://unsplash.com/photos/ZGa9d1a_4tA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >image of the bloke from Unsplash</a
+            >
+            but I personally took the background image on Hampstead Heath.
+            <a
+              href="https://fonts.google.com/specimen/Prompt"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Prompt font</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/chinese-eugene/">
-                    <img src="chinese-eugene/chinese-eugene.jpg" alt="Eugene in Chinese">
-                </a>
-                <a href="/chinese-eugene/">
-                    <h2>Chinese Eugene</h2>
-                </a>
-                <p>Have you ever wondered how your name looks like in Chinese characters? and in the <a
-                        href="https://flagcolor.com/chinese-flag-color-codes/" target="_blank"
-                        rel="noopener noreferrer">colours of the Chinese flag</a>?
-                    Here's mine, I just used <a href="https://translate.google.co.uk/" target="_blank"
-                        rel="noopener noreferrer">Google translate</a>. There were not many Google fonts for Chinese
-                    though but I did find <a href="https://fonts.google.com/specimen/Noto+Sans+TC" target="_blank"
-                        rel="noopener noreferrer">Noto Sans TC</a>.</p>
-            </div>
+        <div class="entry">
+          <a href="contrast/">
+            <img src="contrast/contrast.jpg" alt="Contrast landing page" />
+          </a>
+          <a href="contrast/">
+            <h2>Contrast</h2>
+          </a>
+          <p>
+            Contrast theme with nested css flexbox rules and somehow responsive
+            font size.
+            <a
+              href="https://fonts.google.com/specimen/Odibee+Sans#standard-styles"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Odibee Sans font family</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="/numbers-stack/">
-                    <img src="numbers-stack/numbers-stack.jpg" alt="Numbers Stack landing page">
-                </a>
-                <a href="/numbers-stack/">
-                    <h2>Numbers Stack</h2>
-                </a>
-                <p>I was considering to learn to do card tricks, just for the sake of doing something cool
-                    with my hands away from the screen. Whilst browsing a website I bumped into the <a
-                        href="https://www.artofplay.com/products/45s" target="_blank" rel="noopener noreferrer">45s
-                        Playing Cards</a>. Then just by adding 1 and 2 at either end, I made up the year of birth of <a
-                        href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank"
-                        rel="noopener noreferrer">Leonardo da Vinci</a>. <a
-                        href="https://fonts.google.com/specimen/Lexend+Deca" target="_blak"
-                        rel="noopenere noreferrer">Lexend Deca font family</a>.</p>
-            </div>
+        <div class="entry">
+          <a href="clear-vision/">
+            <img
+              src="clear-vision/clear-vision.jpg"
+              alt="Clear Vision landing page"
+            />
+          </a>
+          <a href="clear-vision/">
+            <h2>Clear Vision</h2>
+          </a>
+          <p>
+            Inspired by an
+            <a
+              href="https://eugebucket.s3-eu-west-1.amazonaws.com/media/eyevan-7285-advert-monocle.jpg"
+              target="_blank"
+              rel="nofollow noopener"
+              >Eyevan 7285 advert</a
+            >
+            on an issue of
+            <a
+              href="https://monocle.com/magazine/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Monocle magazine</a
+            >. Unusual implementation of the
+            <a
+              href="https://css-tricks.com/almanac/properties/d/direction/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >direction CSS property</a
+            >
+            and oversized images. Photos sourced on
+            <a
+              href="https://unsplash.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Unsplash</a
+            >, see the <code>alt</code> attribute for authoring.
+            <a
+              href="https://fonts.google.com/specimen/Space+Mono"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Space Mono font family</a
+            >.
+          </p>
+        </div>
 
-            <div class="entry">
-                <a href="e-train/">
-                    <img src="e-train/e-train.jpg" alt="MTA E Train landing page">
-                </a>
-                <a href="e-train/">
-                    <h2>E Train</h2>
-                </a>
-                <p>Inspired by an <a
-                        href="https://eugebucket.s3-eu-west-1.amazonaws.com/media/ny-transit-museum-store-e-train-t-shirt.jpg"
-                        target="_blank" rel="noopener noreferrer">MTA E Train t-shirt</a> I bought when I visited New
-                    York City in 2004. <a
-                        href="https://www.aiga.org/the-mostly-true-story-of-helvetica-and-the-new-york-city-subway"
-                        target="_blank" rel="noopener noreferrer">Helvetica seems to be the font family used by the
-                        MTA</a> but I didn't have a licence for it so I opted for <a
-                        href="https://fonts.google.com/specimen/Montserrat" target="_blank"
-                        rel="noopener noreferrer">Montserrat</a> on the train letter and <a
-                        href="https://fonts.google.com/specimen/Libre+Franklin" target="_blank"
-                        rel="noopener noreferrer">Libre Franklin</a> on the train route which I reckon they are close
-                    enough. Lastly I got the actual blue colour from the <a
-                        href="http://web.mta.info/developers/resources/line_colors.htm" target="_blank"
-                        rel="noopener noreferrer">MTA brand guide</a>.</p>
-            </div>
-
-            <div class="entry">
-                <a href="life-coach/">
-                    <img src="life-coach/life-coach.jpg" alt="Life Coach landing page">
-                </a>
-                <a href="life-coach/">
-                    <h2>Andrew Taylor - Life Coach</h2>
-                </a>
-                <p>A friend of mine asked me to put together a landing page for his new life coaching business, this is
-                    its dummy version. I got the <a href="https://unsplash.com/photos/ZGa9d1a_4tA" target="_blank"
-                        rel="noopener noreferrer">image of the bloke from Unsplash</a> but I personally took the
-                    background image on Hampstead Heath. <a href="https://fonts.google.com/specimen/Prompt"
-                        target="_blank" rel="noopener noreferrer">Prompt font</a>.</p>
-            </div>
-
-            <div class="entry">
-                <a href="contrast/">
-                    <img src="contrast/contrast.jpg" alt="Contrast landing page">
-                </a>
-                <a href="contrast/">
-                    <h2>Contrast</h2>
-                </a>
-                <p>Contrast theme with nested css flexbox rules and somehow responsive font size. <a
-                        href="https://fonts.google.com/specimen/Odibee+Sans#standard-styles" target="_blank"
-                        rel="noopener noreferrer">Odibee Sans font family</a>.</p>
-            </div>
-
-            <div class="entry">
-                <a href="clear-vision/">
-                    <img src="clear-vision/clear-vision.jpg" alt="Clear Vision landing page">
-                </a>
-                <a href="clear-vision/">
-                    <h2>Clear Vision</h2>
-                </a>
-                <p>Inspired by an <a
-                        href="https://eugebucket.s3-eu-west-1.amazonaws.com/media/eyevan-7285-advert-monocle.jpg"
-                        target="_blank" rel="nofollow noopener">Eyevan 7285 advert</a> on an issue
-                    of <a href="https://monocle.com/magazine/" target="_blank" rel="noopener noreferrer">Monocle
-                        magazine</a>. Unusual implementation of the <a
-                        href="https://css-tricks.com/almanac/properties/d/direction/" target="_blank"
-                        rel="noopener noreferrer">direction CSS property</a> and oversized images. Photos sourced on <a
-                        href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>, see the
-                    <code>alt</code> attribute for authoring. <a href="https://fonts.google.com/specimen/Space+Mono"
-                        target="_blank" rel="noopener noreferrer">Space Mono font family</a>.
-                </p>
-            </div>
-
-            <div class="entry entry--last">
-                <a href="fluorescent-jazz/">
-                    <img src="fluorescent-jazz/fluorescent-jazz.jpg" alt="Fluorescent Jazz landing page">
-                </a>
-                <a href="fluorescent-jazz/">
-                    <h2>Fluorescent Jazz</h2>
-                </a>
-                <p>I saw this design in a book whilst browsing in a second-hand shop. I thought I would
-                    replicate it with a jazz theme: <a href="https://youtu.be/xkGanLoxEKk" target="_blank"
-                        rel="noopener noreferrer">Dexter Gordon: Boston Bernie</a>, <a
-                        href="https://youtu.be/NWYWgda5f0I" target="_blank" rel="noopener noreferrer">John Coltrane: My
-                        Favourite Things</a>, <a href="https://youtu.be/N-Wcw_te_AI" target="_blank"
-                        rel="noopener noreferrer">Hank Mobley: Soul Station</a>.
-                    <a href="https://fonts.google.com/specimen/Work+Sans" target="_blank" rel="noopener noreferrer">Work
-                        Sans font family</a>.
-                </p>
-            </div>
-
-        </div> <!-- end of entries index -->
-
+        <div class="entry entry--last">
+          <a href="fluorescent-jazz/">
+            <img
+              src="fluorescent-jazz/fluorescent-jazz.jpg"
+              alt="Fluorescent Jazz landing page"
+            />
+          </a>
+          <a href="fluorescent-jazz/">
+            <h2>Fluorescent Jazz</h2>
+          </a>
+          <p>
+            I saw this design in a book whilst browsing in a second-hand shop. I
+            thought I would replicate it with a jazz theme:
+            <a
+              href="https://youtu.be/xkGanLoxEKk"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dexter Gordon: Boston Bernie</a
+            >,
+            <a
+              href="https://youtu.be/NWYWgda5f0I"
+              target="_blank"
+              rel="noopener noreferrer"
+              >John Coltrane: My Favourite Things</a
+            >,
+            <a
+              href="https://youtu.be/N-Wcw_te_AI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Hank Mobley: Soul Station</a
+            >.
+            <a
+              href="https://fonts.google.com/specimen/Work+Sans"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Work Sans font family</a
+            >.
+          </p>
+        </div>
+      </div>
+      <!-- end of entries index -->
     </div>
 
     <footer class="footer">
-
-        <div class="footer-quote">
-            <q>The creative adult is the child who survived</q>
-            <small> - <a href="https://en.wikipedia.org/wiki/Ursula_K._Le_Guin" target="_blank"
-                    rel="noopener noreferrer">Ursula K. Le Guin</a></small>
-        </div>
-
+      <div class="footer-quote">
+        <q>The creative adult is the child who survived</q>
+        <small>
+          -
+          <a
+            href="https://en.wikipedia.org/wiki/Ursula_K._Le_Guin"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ursula K. Le Guin</a
+          ></small
+        >
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
